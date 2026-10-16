@@ -1,0 +1,30 @@
+/tencoder
+config.yaml
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+.idea/
+.vscode/
+.tencoder/
+.claude/
+CLAUDE.md
+docs/
+
+# ── 阶段五补充 ────────────────────────────────────────────────────────────
+# 编译产物（.gitignore 里 /tencoder 只挡住了主二进制，这里补齐其余）
+/tencoder-eval
+/mabench
+
+# 工具生成物与本地工作区数据
+.ua/
+.workbuddy/
+project-review-site.zip
+.DS_Store
+
+# 本地凭据与运行数据（保险起见重复 .tencoder/，防止有人在子目录里改过规则）
+**/config.yaml
+**/.env
