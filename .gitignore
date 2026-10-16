@@ -35,3 +35,6 @@ project-review-site.zip
 [0-9][0-9]-*.md
 Tencoder-面试学习资料.md
 面试常见问题汇总.md
+
+# 单文件练习代码（未被任何包引用；package main 置于根目录会干扰 go build ./...）
+/quicksort.go
